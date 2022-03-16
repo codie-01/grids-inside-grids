@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+        <link rel="stylesheet" href="/style.css">
+    </head>
+   
+    
+    <body>
+
+        <!--------------------- How to distribute content vertically --------------------->
+
+        <section class="grid-spaceBetween"> 
+
+            <div class="col-3 box-1"> 
+              <h2> Heading One </h2>
+              <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores suscipit architecto enim culpa ea aliquam voluptates illo libero aspernatur perspiciatis voluptatem, similique assumenda repudiandae quibusdam cum expedita eveniet magnam rem? </p> 
+            </div>  
+            
+            <div class="col-3 box-2"> 
+              <h2> Heading Two </h2>
+              <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores suscipit architecto enim culpa ea aliquam voluptates illo libero aspernatur perspiciatis voluptatem, similique assumenda repudiandae quibusdam cum expedita eveniet magnam rem? </p> 
+            </div> 
+            
+            <div class="col-3 box-3"> 
+              <h2> Heading Three </h2>
+              <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores suscipit architecto enim culpa ea aliquam voluptates illo libero aspernatur perspiciatis voluptatem, similique assumenda repudiandae quibusdam cum expedita eveniet magnam rem?</p> 
+            </div> 
+          </section> 
+
+    <br>
+    
+    
+          <!--------------------- Adding negative space to grid layouts --------------------->
+
+    <section class="grid"> 
+        <div class="col-4-top padded-2">
+          <div class="box-1">
+            <h2> Heading One </h2>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores suscipit architecto enim culpa ea aliquam voluptates illo libero aspernatur perspiciatis voluptatem, similique assumenda repudiandae quibusdam cum expedita eveniet magnam rem? </p> 
+          </div>
+        </div>  
+        <div class="col-4-middle padded-2">
+          <div class="box-2">
+            <h2> Heading Two </h2>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores suscipit architecto enim culpa ea aliquam voluptates illo libero aspernatur perspiciatis voluptatem, similique assumenda repudiandae quibusdam cum expedita eveniet magnam rem? </p> 
+          </div>
+        </div> 
+        <div class="col-4-bottom padded-2"> 
+          <div class="box-3">
+            <h2> Heading Three </h2>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores suscipit architecto enim culpa ea aliquam voluptates illo libero aspernatur perspiciatis voluptatem, similique assumenda repudiandae quibusdam cum expedita eveniet magnam rem?</p>
+          </div>
+        </div> 
+      </section>
+
+
+     <br>
+     
+     
+      <!--------------------- How to nest grids inside grids --------------------->
+
+    <section class="grid">
+<div class="col-4 outer-box"> ... </div>
+<div class="col-4 outer-box grid"> 
+    <div class="col-6 orange-box"> ... </div>
+    <div class="col-6 orange-box"> ... </div>
+    <div class="col-6 orange-box"> ...  </div>
+    <div class="col-6 orange-box"> ... </div>
+</div>
+<div class="col-4  outer-box"> ... </div>
+
+<div class="col-8 outer-box grid"> 
+    <div class="col-4 orange-box"> ... </div> 
+    <div class="col-4 orange-box"> ... </div>
+    <div class="col-4 orange-box"> ... </div>
+</div>
+<div class="col-4 outer-box"> ... </div>
+    </section>
+
+    
+
+
+
+    </body>
+</html>
